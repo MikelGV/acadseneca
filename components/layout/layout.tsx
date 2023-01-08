@@ -1,6 +1,6 @@
 import Head from "next/head";
-import TopBar from "./topbar";
-import Footer from "./footer";
+import TopBar from "../topbar/topbar";
+import Footer from "../footer/footer";
 
 export default function Layout({children, home}: {children:any, home: boolean}) {
     return(
