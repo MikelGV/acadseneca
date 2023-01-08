@@ -6,16 +6,12 @@ export default function TopBar() {
         <div className={styles.topbar}>
             <div className={styles.topbarWrapper}>
                 <div className={styles.left}>
-                    <div className={styles.leftWrapper}>
-                        <Link className={styles.logo} href="/">Academia Seneca</Link>
-                    </div>
+                    <Link className={styles.logo} href="/">Academia Seneca</Link>
                 </div>
                 <div className={styles.right}>
-                    <div className={styles.rightWrapper}>
-                        <Link href="/dEstamos" className={styles.dEstamos}>Donde Estamos</Link>
-                        <Link href="/qSomos" className={styles.qSomos}>Quienes Somos</Link>
-                        <Link href="/contact" className={styles.contact}>Contacto</Link>
-                    </div>
+                    <Link href="/dEstamos" className={styles.MenuItem}>Donde Estamos</Link>
+                    <Link href="/qSomos" className={styles.MenuItem}>Quienes Somos</Link>
+                    <Link href="/contact" className={styles.MenuItem}>Contacto</Link>
                 </div>
             </div>
         </div>
