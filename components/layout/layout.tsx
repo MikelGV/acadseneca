@@ -8,7 +8,7 @@ export default function Layout({children, home}: {children:any, home: boolean}) 
             <Head>
                 <link rel="icon" href="/favicon.ico"/>
                 <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;400;500;600&display=swap');
                 </style> 
             </Head>
             <header>
