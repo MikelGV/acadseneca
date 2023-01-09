@@ -12,6 +12,7 @@
 .left {
     flex: 1;
     margin-left: 25vw;
+    margin-bottom: 45px;
 }
 
 .leftTitle {
@@ -29,7 +30,6 @@
 
 .rightTitle {
     font-size: 20px;
-    margin-top: 45px;
 }
 
 .rightText {

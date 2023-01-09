@@ -14,9 +14,9 @@ export default function Footer() {
                     <h1 className={style.rightTitle}>Dónde Estamos</h1>
                     <p className={style.rightText}>
                         Localización 1:
-                            Los Hoyos Bidea, 9, 48980 Santurtzi, Bizkaia
-                            Telefono: 94 471 46 10
-                        Localización 2:
+                            Los Hoyos Bidea, 9, 48980 Santurtzi, Bizkaia <br />
+                            Telefono: 94 471 46 10 <br />
+                        Localización 2: <br />
                             P.º Blasco Ibanez Páseálekyá, 1 BIS, 48500 Gallarta
                     </p>
                 </div>
