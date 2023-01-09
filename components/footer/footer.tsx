@@ -21,6 +21,9 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
+            <div className={style.miniFooter}>
+                <h1 className={style.logo}>Academia Seneca</h1>
+            </div>
         </div>
     )
 }
