@@ -1,0 +1,50 @@
+.footer {
+    height: 100px;
+}
+
+.footerWrapper {
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+    margin-left: 25vw;
+    margin-bottom: 45px;
+}
+
+.leftTitle {
+    font-size: 20px;
+}
+
+.leftText {
+    font-size: 15px;
+    width: 276px;
+}
+
+.right {
+    flex: 1;
+}
+
+.rightTitle {
+    font-size: 20px;
+}
+
+.rightText {
+    font-size: 15px;
+    width: 276px;
+}
+
+.miniFooter {
+    background-color: #C7C7C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 19px;
+    font-family: 'Dancing Script', cursive;
+}
