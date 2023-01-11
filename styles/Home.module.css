@@ -23,9 +23,9 @@
 
 .centered {
   position: absolute;
-  padding: 10px 20px;
-  top: 30%;
-  left: 30%;
+  padding: 10px 40px;
+  top: 25%;
+  left: 25%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 10px;
@@ -33,15 +33,20 @@
 
 
 .centeredLogo {
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Dancing Script', cursive;
+  text-align: left;
 }
 
 .centeredTitle {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .centeredText {
-  width: 376px;
+  width: 686px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: left;
 }
