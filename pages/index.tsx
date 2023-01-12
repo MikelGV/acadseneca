@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout home>
       <div className={styles.main}>
-        <div className={styles.mainWrapper}>
+        <div className={styles.imgWrapper}>
           <img className={styles.mainImg} src="/img/optiona.jpg" alt="" />
           <div className={styles.centered}>
             <h1 className={styles.centeredLogo}>Academia Seneca</h1>
@@ -16,13 +16,24 @@ export default function Home() {
               Refuerzo escolar personalizado y preparación para los examense oficiales de idiomas
             </p>
           </div>
-          <div className={styles.experience}>
+        </div>
+        <div className={styles.experience}>
             <h1 className={styles.expTitle}>+30 años de experiencia, +10000</h1>
             <p className={styles.expText}>
               Nuestra academia ofrece una atención absolutamente personalizada, focalizada en el rendimiento y satisfactión del alumno.
             </p>
           </div>
-        </div>
+
+          <div className={styles.aboutWrapper}>
+            <div className={styles.aboutLeft}>
+              <img className={styles.leftImg} src="/img/aboutTheFormationOfGroups.jpg" alt="" />
+              <p className={styles.leftText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis, minima ipsum dolore in, pariatur quaerat placeat error inventore natus dolor harum! Debitis recusandae consequuntur earum! Hic odio saepe in?</p>
+            </div>
+            <div className={styles.aboutRight}>
+              <img className={styles.rightImg} src="/img/aboutTheTeachers.jpg" alt="" />
+              <p className={styles.rightText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis, minima ipsum dolore in, pariatur quaerat placeat error inventore natus dolor harum! Debitis recusandae consequuntur earum! Hic odio saepe in?</p>
+            </div>
+          </div>
       </div>
     </Layout>
   )
