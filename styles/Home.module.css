@@ -1,29 +1,30 @@
 .main {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.mainWrapper {
+.imgWrapper {
   position: relative;
   text-align: center;
+  max-height: 80vh;
 }
 
 
 .mainImg {
-  height: 65%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 20%;
+  overflow: hidden;
 }
 
 .centered {
   position: absolute;
   padding: 10px 40px;
-  top: 25%;
-  left: 25%;
+  top: 40%;
+  left: 29%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 10px;
@@ -51,9 +52,9 @@
 
 
 .experience {
-  position: absolute;
-  padding: 10px 40px;
-  left: 25%;
+  text-align: center;
+  margin-bottom: 10vh;
+  
 }
 
 .expTitle {
@@ -65,4 +66,43 @@
   font-size: 20px;
   width: 686px;
   margin-left: 30px;
+}
+
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-bottom: 20vh;
+
+}
+
+.aboutLeft {
+  margin-left: 30vh;
+}
+
+.leftImg{
+  width: 69%;
+  border-radius: 10px;
+}
+
+.leftText {
+  width: 476px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.aboutRight {
+  margin-left: 10px;
+}
+
+.rightImg{
+  width: 69%;
+  border-radius: 10px;
+}
+
+.rightText {
+  width: 476px;
+  
+  font-size: 20px;
+  text-align: left;
 }
