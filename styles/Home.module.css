@@ -1,18 +1,16 @@
 .main {
   min-height: 100vh;
-}
-
-.mainWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.imgWrapper {
+.mainWrapper {
   position: relative;
   text-align: center;
 }
+
 
 .mainImg {
   height: 65%;
@@ -49,4 +47,22 @@
   font-size: 20px;
   font-weight: 200;
   text-align: left;
+}
+
+
+.experience {
+  position: absolute;
+  padding: 10px 40px;
+  left: 25%;
+}
+
+.expTitle {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.expText {
+  font-size: 20px;
+  width: 686px;
+  margin-left: 30px;
 }
