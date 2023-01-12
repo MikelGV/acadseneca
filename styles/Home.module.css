@@ -1,8 +1,4 @@
 .main {
-  min-height: 100vh;
-}
-
-.mainWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,20 +8,23 @@
 .imgWrapper {
   position: relative;
   text-align: center;
+  max-height: 80vh;
 }
 
+
 .mainImg {
-  height: 65%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 20%;
+  overflow: hidden;
 }
 
 .centered {
   position: absolute;
-  padding: 10px 20px;
-  top: 30%;
-  left: 30%;
+  padding: 10px 40px;
+  top: 40%;
+  left: 29%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 10px;
@@ -33,15 +32,77 @@
 
 
 .centeredLogo {
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Dancing Script', cursive;
+  text-align: left;
 }
 
 .centeredTitle {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .centeredText {
-  width: 376px;
+  width: 686px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: left;
+}
+
+
+.experience {
+  text-align: center;
+  margin-bottom: 10vh;
+  
+}
+
+.expTitle {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.expText {
+  font-size: 20px;
+  width: 686px;
+  margin-left: 30px;
+}
+
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-bottom: 20vh;
+
+}
+
+.aboutLeft {
+  margin-left: 30vh;
+}
+
+.leftImg{
+  width: 69%;
+  border-radius: 10px;
+}
+
+.leftText {
+  width: 476px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.aboutRight {
+  margin-left: 10px;
+}
+
+.rightImg{
+  width: 69%;
+  border-radius: 10px;
+}
+
+.rightText {
+  width: 476px;
+  
+  font-size: 20px;
+  text-align: left;
 }
