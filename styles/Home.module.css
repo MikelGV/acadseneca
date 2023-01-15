@@ -106,3 +106,8 @@
   font-size: 20px;
   text-align: left;
 }
+
+.coursesWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
