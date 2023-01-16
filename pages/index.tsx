@@ -17,6 +17,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+
         <div className={styles.experience}>
             <h1 className={styles.expTitle}>+30 años de experiencia, +10000</h1>
             <p className={styles.expText}>
@@ -32,6 +33,29 @@ export default function Home() {
             <div className={styles.aboutRight}>
               <img className={styles.rightImg} src="/img/aboutTheTeachers.jpg" alt="" />
               <p className={styles.rightText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis, minima ipsum dolore in, pariatur quaerat placeat error inventore natus dolor harum! Debitis recusandae consequuntur earum! Hic odio saepe in?</p>
+            </div>
+          </div>
+
+          <div className={styles.coursesWrapper}>
+            <div className={styles.primaria}>
+              <img className={styles.pImg} src="/img/primaria.jpg" alt="" />
+              <h2 className={styles.pText}></h2>
+            </div>
+            <div className={styles.eso}>
+              <img className={styles.eImg} src="/img/eso.jpg" alt="" />
+              <h2 className={styles.eText}></h2>
+            </div>
+            <div className={styles.bachiller}>
+              <img className={styles.bImg} src="/img/bachiller.jpg" alt="" />
+              <h2 className={styles.bText}></h2>
+            </div>
+            <div className={styles.uni}>
+              <img className={styles.uImg} src="/img/uni.jpg" alt="" />
+              <h2 className={styles.uText}></h2>
+            </div>
+            <div className={styles.idiomas}>
+              <img className={styles.iImg} src="/img/language.jpg" alt="" />
+              <h2 className={styles.iText}></h2>
             </div>
           </div>
       </div>
