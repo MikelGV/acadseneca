@@ -111,3 +111,38 @@
   display: grid;
   grid-template-columns: auto auto auto;
 }
+
+.primaria{}
+.pImg{
+  width: 69%;
+  border-radius: 10px;
+}
+.pText{}
+
+.eso{}
+.eImg{
+  width: 69%;
+  border-radius: 10px;
+}
+.eText{}
+
+.bachiller{}
+.bImg{
+  width: 69%;
+  border-radius: 10px;
+}
+.bText{}
+
+.uni{}
+.uImg{
+  width: 69%;
+  border-radius: 10px;
+}
+.uText{}
+
+.idiomas{}
+.iImg{
+  width: 69%;
+  border-radius: 10px;
+}
+.iText{}
