@@ -38,23 +38,23 @@ export default function Home() {
 
           <div className={styles.coursesWrapper}>
             <div className={styles.primaria}>
-              <img className={styles.pImg} src="" alt="" />
+              <img className={styles.pImg} src="/img/primaria.jpg" alt="" />
               <h2 className={styles.pText}></h2>
             </div>
             <div className={styles.eso}>
-              <img className={styles.eImg} src="" alt="" />
+              <img className={styles.eImg} src="/img/eso.jpg" alt="" />
               <h2 className={styles.eText}></h2>
             </div>
             <div className={styles.bachiller}>
-              <img className={styles.bImg} src="" alt="" />
+              <img className={styles.bImg} src="/img/bachiller.jpg" alt="" />
               <h2 className={styles.bText}></h2>
             </div>
             <div className={styles.uni}>
-              <img className={styles.uImg} src="" alt="" />
+              <img className={styles.uImg} src="/img/uni.jpg" alt="" />
               <h2 className={styles.uText}></h2>
             </div>
             <div className={styles.idiomas}>
-              <img className={styles.iImg} src="" alt="" />
+              <img className={styles.iImg} src="/img/language.jpg" alt="" />
               <h2 className={styles.iText}></h2>
             </div>
           </div>
