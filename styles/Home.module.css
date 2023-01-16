@@ -114,7 +114,10 @@
 
 .primaria{}
 .pImg{
+  height: 45%;
   width: 69%;
+  object-fit: cover;
+  object-position: 10px 15%;
   border-radius: 10px;
 }
 .pText{}
