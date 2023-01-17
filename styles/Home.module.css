@@ -110,42 +110,73 @@
 .coursesWrapper {
   display: grid;
   grid-template-columns: auto auto auto;
+  column-gap: 20px;
 }
 
-.primaria{}
+.primaria{
+  position: relative;
+  max-width: 48vh;
+  max-height: 66vh;
+  margin-left: 50vh;
+}
 .pImg{
-  height: 45%;
-  width: 69%;
+  height: 50%;
+  width: 100%;
   object-fit: cover;
-  object-position: 10px 15%;
+  object-position: 1px 15%;
   border-radius: 10px;
 }
-.pText{}
+.pText{
+  width: 476px;
+}
 
 .eso{}
 .eImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
-.eText{}
+.eText{
+  width: 476px;
+}
 
-.bachiller{}
+.bachiller{
+  margin-right: 50vh;
+}
 .bImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
-.bText{}
+.bText{
+  width: 476px;
+}
 
-.uni{}
+.bottomGrid{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  margin-bottom: 20vh;
+}
+
+.uni{
+  position: relative;
+  max-width: 50vh;
+}
 .uImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
-.uText{}
+.uText{
+  width: 476px;
+}
 
-.idiomas{}
+.idiomas{
+  position: relative;
+  max-width: 50vh;
+}
 .iImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
-.iText{}
+.iText{
+  width: 476px;
+}
