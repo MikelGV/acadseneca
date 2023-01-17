@@ -116,11 +116,11 @@
 .primaria{
   position: relative;
   max-width: 48vh;
-  max-height: 66vh;
+  max-height: 100vh;
   margin-left: 50vh;
 }
 .pImg{
-  height: 50%;
+  height: 46%;
   width: 100%;
   object-fit: cover;
   object-position: 1px 15%;
