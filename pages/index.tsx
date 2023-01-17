@@ -56,16 +56,19 @@ export default function Home() {
           </div>
 
           <div className={styles.bottomGrid}>
-              <div className={styles.uni}>
-                <img className={styles.uImg} src="/img/uni.jpg" alt="" />
-                <p className={styles.uText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet reiciendis nihil aliquam doloremque corporis, veritatis repudiandae dolorum, fugit perferendis ipsum aspernatur architecto itaque quia sequi assumenda sint vel fuga veniam?</p>
-              </div>
-
-              <div className={styles.idiomas}>
-                <img className={styles.iImg} src="/img/language.jpg" alt="" />
-                <p className={styles.iText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis ut aperiam. Voluptatibus fugiat sapiente aperiam sequi pariatur earum eius officia, omnis libero, iste cum inventore voluptatum voluptates magni. Vero.</p>
-              </div>
+            <div className={styles.uni}>
+              <img className={styles.uImg} src="/img/uni.jpg" alt="" />
+              <p className={styles.uText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet reiciendis nihil aliquam doloremque corporis, veritatis repudiandae dolorum, fugit perferendis ipsum aspernatur architecto itaque quia sequi assumenda sint vel fuga veniam?</p>
             </div>
+
+            <div className={styles.idiomas}>
+              <img className={styles.iImg} src="/img/language.jpg" alt="" />
+              <p className={styles.iText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis ut aperiam. Voluptatibus fugiat sapiente aperiam sequi pariatur earum eius officia, omnis libero, iste cum inventore voluptatum voluptates magni. Vero.</p>
+            </div>
+          </div>
+
+          <div className={styles.teacherSlider}></div>
+
       </div>
     </Layout>
   )
