@@ -74,15 +74,17 @@
   grid-template-columns: auto auto auto;
   padding: 10px;
   margin-bottom: 20vh;
+  column-gap: 20px;
 
 }
 
 .aboutLeft {
-  margin-left: 30vh;
+  max-width: 58vh;
+  max-height: 100vh;
 }
 
 .leftImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -94,10 +96,12 @@
 
 .aboutRight {
   margin-left: 10px;
+  max-width: 58vh;
+  max-height: 100vh;
 }
 
 .rightImg{
-  width: 69%;
+  width: 100%;
   border-radius: 10px;
 }
 
