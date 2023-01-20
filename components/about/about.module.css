@@ -1,0 +1,42 @@
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-bottom: 20vh;
+  column-gap: 20px;
+
+}
+
+.aboutLeft {
+  max-width: 58vh;
+  max-height: 100vh;
+}
+
+.leftImg{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.leftText {
+  width: 476px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.aboutRight {
+  margin-left: 10px;
+  max-width: 58vh;
+  max-height: 100vh;
+}
+
+.rightImg{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rightText {
+  width: 476px;
+  
+  font-size: 20px;
+  text-align: left;
+}
