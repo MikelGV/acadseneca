@@ -29,3 +29,19 @@
     transition: all 1.5s ease;
     
 }
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer{
+    height: 100%;
+    flex: 1;
+}
+
+.img{
+    height: 80%;
+}

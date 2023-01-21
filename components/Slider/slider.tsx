@@ -7,7 +7,13 @@ export default function Slider() {
             <div className={styles.arrow}>
                 <ArrowLeftOutlined/>
             </div>
-            <div className={styles.wrapper}></div>
+            <div className={styles.wrapper}>
+                <div className={styles.slide}>
+                    <div className={styles.imgContainer}>
+                        <img className={styles.img} src="/img/teacherExample.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
             <div className={styles.arrow}>
                 <ArrowRightOutlined/>
             </div>
