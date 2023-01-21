@@ -3,6 +3,7 @@ import Layout from '../components/layout/layout'
 import Experience from '../components/experiene/experience'
 import About from '../components/about/about'
 import Courses from '../components/courses/courses'
+import Slider from '../components/Slider/slider'
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Experience/>
         <About />
         <Courses/>
+        <Slider/>
       </div>
     </Layout>
   )
