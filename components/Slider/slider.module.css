@@ -34,4 +34,5 @@
     object-fit: cover;
     object-position: 0 10%;
     height: 550px;
+    border-radius: 10px;
 }
