@@ -7,9 +7,9 @@ export default function qSomos() {
         <Layout home>
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    <div className="left">
-                        <h1 className="leftTitle">Quiénes Somos</h1>
-                        <p className="leftText">
+                    <div className={styles.left}>
+                        <h1 className={styles.leftTitle}>Quiénes Somos</h1>
+                        <p className={styles.leftText}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, earum beatae velit sint maxime aperiam? Aperiam blanditiis est ipsa? Similique mollitia repellendus tenetur blanditiis fugiat in voluptatum hic eos voluptatem!
                         </p>
                     </div>
