@@ -1,5 +1,7 @@
 import Layout from "../components/layout/layout";
-import styles from "../styles/dEstamos.module.css"
+import styles from "../styles/dEstamos.module.css";
+
+import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
 export default function dEstamos() {
     return(
