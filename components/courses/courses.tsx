@@ -6,18 +6,37 @@ export default function Courses() {
             <div className={styles.coursesWrapper}>
 
                 <div className={styles.primaria}>
-                    <img className={styles.pImg} src="/Img/primaria.jpg" alt="" />
-                    <p className={styles.pText}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet adipisci quo architecto iure, ut quibusdam libero, nemo pariatur alias esse exercitationem in illo voluptas corrupti doloremque dolores ipsam. Velit, accusamus!</p>
+                    <div className={styles.ImgWrapper}>
+                        <img className={styles.Img} src="/Img/primaria.jpg" alt="" />
+                        <p className={styles.Title}>PRIMARIA</p>
+                    </div>
+                    <p className={styles.Text}>
+                        Asignaturas de apoyo:
+                            Matematicas, Euskera, Ingles y Lengua(Castellano).
+                    </p>
                 </div>
 
-                <div className={styles.eso}>
-                    <img className={styles.eImg} src="/Img/eso.jpg" alt="" />
-                    <p className={styles.eText}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis ratione impedit exercitationem expedita voluptas dolorem fugiat nisi at. Saepe labore necessitatibus ad iure aut suscipit ea sed recusandae provident?</p>
+                <div className={styles.education}>
+                    <div className={styles.ImgWrapper}>
+                        <img className={styles.Img} src="/Img/eso.jpg" alt="" />
+                        <p className={styles.Title}>E.S.O</p>
+                    </div>
+                    <p className={styles.Text}> 
+                        Asignaturas de apoyo:
+                            Matematicas, Euskera, Ingles, Lengua(Castellano), Fisica y Química.
+                    </p>
                 </div>
 
-                <div className={styles.bachiller}>
-                    <img className={styles.bImg} src="/Img/bachiller.jpg" alt="" />
-                    <p className={styles.bText}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis non mollitia quod, aperiam ut deleniti nam magni consequuntur repellat earum voluptas sequi quia suscipit laboriosam veniam doloribus? Porro, labore accusamus!</p>
+                <div className={styles.education}>
+                    <div className={styles.ImgWrapper}>
+                        <img className={styles.Img} src="/Img/bachiller.jpg" alt="" />
+                        <p className={styles.Title}>BACHILLERATO</p>
+                    </div>
+                    <p className={styles.Text}>
+                        Asignaturas de apoyo:
+                            Matematicas, Euskera, Ingles, Lengua(Castellano), Fisica, Química, Selectividad(PAU).
+
+                    </p>
                 </div>
             </div>
 
@@ -30,7 +49,9 @@ export default function Courses() {
 
                 <div className={styles.idiomas}>
                     <img className={styles.iImg} src="/Img/language.jpg" alt="" />
-                    <p className={styles.iText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis ut aperiam. Voluptatibus fugiat sapiente aperiam sequi pariatur earum eius officia, omnis libero, iste cum inventore voluptatum voluptates magni. Vero.</p>
+                    <p className={styles.iText}>
+                        Inglés: Centro oficial preparador de examenes de la Universidad de Cambridge(Porcentaje de aprobados de un 95%).
+                    </p>
                 </div>
 
             </div>

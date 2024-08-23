@@ -2,29 +2,58 @@
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .primaria{
-  position: relative;
-  max-width: 48vh;
-  max-height: 100vh;
-  margin-left: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-left:30vh;
 }
-.pImg{
-  height: 46%;
-  width: 100%;
+
+.education { 
+    display: flex;
+    flex-direction: column;
+}
+
+.ImgWrapper {
+    position: relative;    
+}
+
+.Img{
+  height: 34vh;
+  width: 50vh;
   object-fit: cover;
   object-position: 1px 15%;
   border-radius: 10px;
 }
-.pText{
+.Title {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+.Text{
   width: 376px;
 }
 
-.eso{}
+
+.eso{
+  position: relative;
+}
+
+.eImgWrapper {
+
+    position: absolute;
+    text-align: center;
+    color: white;
+}
 .eImg{
-  width: 100%;
-  border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 .eText{
   width: 476px;
@@ -32,6 +61,13 @@
 
 .bachiller{
   margin-right: 50vh;
+}
+
+.bImgWrapper {
+
+    position: absolute;
+    text-align: center;
+    color: white;
 }
 .bImg{
   width: 100%;
@@ -51,6 +87,13 @@
 .uni{
   position: relative;
   max-width: 50vh;
+}
+
+.uImgWrapper {
+
+    position: absolute;
+    text-align: center;
+    color: white;
 }
 .uImg{
   width: 100%;
