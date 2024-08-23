@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     margin-left:30vh;
+    margin-bottom: 15vh;
 }
 
 .education { 
@@ -39,78 +40,9 @@
 .Text{
   width: 376px;
 }
-
-
-.eso{
-  position: relative;
-}
-
-.eImgWrapper {
-
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-.eImg{
-    width: 100%;
-    border-radius: 10px;
-}
-.eText{
-  width: 476px;
-}
-
-.bachiller{
-  margin-right: 50vh;
-}
-
-.bImgWrapper {
-
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-.bImg{
-  width: 100%;
-  border-radius: 10px;
-}
-.bText{
-  width: 476px;
-}
-
 .bottomGrid{
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 20px;
   margin-bottom: 20vh;
-}
-
-.uni{
-  position: relative;
-  max-width: 50vh;
-}
-
-.uImgWrapper {
-
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-.uImg{
-  width: 100%;
-  border-radius: 10px;
-}
-.uText{
-  width: 376px;
-}
-
-.idiomas{
-  position: relative;
-  max-width: 50vh;
-}
-.iImg{
-  width: 100%;
-  border-radius: 10px;
-}
-.iText{
-  width: 476px;
 }

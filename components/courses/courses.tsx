@@ -42,14 +42,20 @@ export default function Courses() {
 
             <div className={styles.bottomGrid}>
 
-                <div className={styles.uni}>
-                    <img className={styles.uImg} src="/Img/uni.jpg" alt="" />
-                    <p className={styles.uText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet reiciendis nihil aliquam doloremque corporis, veritatis repudiandae dolorum, fugit perferendis ipsum aspernatur architecto itaque quia sequi assumenda sint vel fuga veniam?</p>
+                <div className={styles.education}>
+                    <div className={styles.ImgWrapper}>
+                        <img className={styles.Img} src="/Img/uni.jpg" alt="" />
+                        <p className={styles.Title}>UNIVERSIDAD</p>
+                    </div>
+                    <p className={styles.Text}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet reiciendis nihil aliquam doloremque corporis, veritatis repudiandae dolorum, fugit perferendis ipsum aspernatur architecto itaque quia sequi assumenda sint vel fuga veniam?</p>
                 </div>
 
-                <div className={styles.idiomas}>
-                    <img className={styles.iImg} src="/Img/language.jpg" alt="" />
-                    <p className={styles.iText}>
+                <div className={styles.education}>
+                    <div className={styles.ImgWrapper}> 
+                        <img className={styles.Img} src="/Img/language.jpg" alt="" />
+                        <p className={styles.Title}>IDIOMAS</p>
+                    </div>
+                    <p className={styles.Text}>
                         Inglés: Centro oficial preparador de examenes de la Universidad de Cambridge(Porcentaje de aprobados de un 95%).
                     </p>
                 </div>
