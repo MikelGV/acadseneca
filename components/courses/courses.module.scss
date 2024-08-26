@@ -20,15 +20,18 @@
 
 .ImgWrapper {
     position: relative;    
-    opacity: 0;
-}
-:hover {
-    .ImgWrapper {
-        opacity: 1;
-    }
-    .Img {
-        -webkit-filter: blur(2px);
-        filter: blur(2px);
+    opacity: 1;
+    &:hover {
+        .ImgWrapper {
+            opacity: 0;
+        }
+        .Img {
+            -webkit-filter: blur(2px);
+            filter: blur(2px);
+        }
+        .Title {
+            opacity: 1;
+        }
     }
 }
 
@@ -47,6 +50,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
+  opacity: 0;
 }
 .Text{
   width: 376px;

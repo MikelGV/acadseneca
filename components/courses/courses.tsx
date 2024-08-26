@@ -1,4 +1,4 @@
-import styles from '../courses/courses.module.css'
+import styles from '../courses/courses.module.scss'
 
 export default function Courses() {
     return (
