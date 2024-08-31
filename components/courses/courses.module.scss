@@ -4,6 +4,7 @@
   column-gap: 20px;
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 
 .primaria{
@@ -44,11 +45,12 @@
 
 .Img{
     height: 34vh;
-    width: 61.2vh;
     object-fit: cover;
     object-position: 1px 15%;
     border-radius: 10px;
     transition: .3s all;
+    min-width: 38.2vh;
+    width: 100%;
 }
 
 .Title {
@@ -66,48 +68,103 @@
     width: 100%;
 }
 
+.rightTextWrapper {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+}
+
 .TextTitle {
-    width: 176px;
+    width: 272px;
     font-weight: bolder;
-    border-bottom: 2px black solid;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-left: 50px;
 }
 
 .Text{
   width: 107px;
+  padding-left: 50px;
 }
 
 .bottomGrid{
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 20px;
-  margin-bottom: 20vh;
 }
 
-.botEducation { 
+.leftEducation { 
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 2px gray;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 71%;
+}
+
+.rightEducation { 
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 1px 2px gray;
     border-radius: 10px;
     width: 100%;
+    height: 38%;
 }
-.bTextTitle {
+
+.rightTextTitle {
     width: 272px;
     font-weight: bolder;
     font-size: 25px;
-    border-bottom: 2px black solid;
+    text-decoration: underline;
     margin-left: 50px;
 }
 
 .botTextTitle {
-    border-bottom: 2px black solid;
+    text-decoration: underline;
     font-weight: bolder;
     font-size: 25px;
-    width: 80px;
-    margin-left: 50px;
+}
+.b1TextTitle {
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 .bText{
     width: 207px;
     padding-left: 50px;
 }
+.b1Text{
+    width: 300px;
+}
+.rightText{
+    width: 300px;
+    padding-left: 50px;
+}
 
+.bTextWrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+}
+.frances {
+    padding-left: 50px;
+}
+
+.aleman {
+    padding-left: 50px;
+}
+
+.euskera {
+    padding-left: 50px;
+}
+
+.ingles {
+    padding-left: 50px;
+}
+
+.inglesB1Text {
+    width: 300px;
+}
