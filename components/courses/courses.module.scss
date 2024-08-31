@@ -10,11 +10,16 @@
 .primaria{
     display: flex;
     flex-direction: column;
-    margin-left:5vh;
     margin-bottom: 15vh;
+    margin-left:5vh;
     box-shadow: 1px 1px 1px 2px gray;
     border-radius: 10px;
     width: 88%;
+}
+
+.liText {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .education { 
@@ -75,16 +80,15 @@
 }
 
 .TextTitle {
-    width: 272px;
     font-weight: bolder;
     font-size: 25px;
     text-decoration: underline;
-    margin-left: 50px;
+    padding-left: 100px;
 }
 
 .Text{
-  width: 107px;
-  padding-left: 50px;
+  padding-left: 70px;
+  columns: 2;
 }
 
 .bottomGrid{
@@ -117,7 +121,7 @@
     font-weight: bolder;
     font-size: 25px;
     text-decoration: underline;
-    margin-left: 50px;
+    margin-left: 69px;
 }
 
 .botTextTitle {

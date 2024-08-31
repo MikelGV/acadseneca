@@ -16,12 +16,12 @@ export default function Courses() {
                         <p className={styles.TextTitle}>
                             Asignaturas de apoyo:
                         </p>
-                        <p className={styles.Text}>
-                            Matematicas-
-                            Euskera 
-                            -Ingles 
-                            -Lengua(Castellano).
-                        </p>
+                        <ul className={styles.Text}>
+                            <li>Matematicas</li>
+                            <li>Euskera</li>
+                            <li>Ingles</li>
+                            <li>Lengua(Castellano)</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -30,12 +30,19 @@ export default function Courses() {
                         <img className={styles.Img} src="/Img/eso.jpg" alt="" />
                         <p className={styles.Title}>E.S.O</p>
                     </div>
-                    <p className={styles.TextTitle}> 
-                        Asignaturas de apoyo:
-                    </p>
-                    <p className={styles.Text}> 
-                            Matematicas, Euskera, Ingles, Lengua(Castellano), Fisica y Química.
-                    </p>
+                    <div className={styles.TextWrapper}>
+                        <p className={styles.TextTitle}> 
+                            Asignaturas de apoyo:
+                        </p>
+                        <ul className={styles.Text}>
+                            <li>Matematicas</li>
+                            <li>Euskera</li>
+                            <li>Ingles</li>
+                            <li>Lengua(Castellano)</li>
+                            <li>Fisica</li>
+                            <li>Química</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className={styles.education}>
@@ -44,13 +51,20 @@ export default function Courses() {
                         <p className={styles.Title}>BACHILLERATO</p>
                     </div>
 
-                    <p className={styles.TextTitle}>
-                        Asignaturas de apoyo:
-                    </p>
-                    <p className={styles.Text}>
-                            Matematicas, Euskera, Ingles, Lengua(Castellano), Fisica, Química, Selectividad(PAU).
-
-                    </p>
+                    <div className={styles.TextWrapper}>
+                        <p className={styles.TextTitle}>
+                            Asignaturas de apoyo:
+                        </p>
+                        <ul className={styles.Text}>
+                            <li>Matematicas</li>
+                            <li>Euskera</li>
+                            <li>Ingles</li>
+                            <li>Lengua(Castellano)</li>
+                            <li>Fisica</li>
+                            <li>Química</li>
+                            <li>Selectividad(PAU)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -66,7 +80,14 @@ export default function Courses() {
                         <p className={styles.rightTextTitle}>
                             Asignaturas de apoyo:
                         </p>
-                        <p className={styles.rightText}>Matematicas, Euskera, Fisica, Quimica, Inglés</p>
+                        <ul className={styles.Text}>
+                            <li>Matematicas</li>
+                            <li>Euskera</li>
+                            <li>Ingles</li>
+                            <li>Lengua(Castellano)</li>
+                            <li>Fisica</li>
+                            <li>Química</li>
+                        </ul>
                     </div>
                 </div>
 
