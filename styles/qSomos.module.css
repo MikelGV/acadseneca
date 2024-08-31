@@ -1,25 +1,57 @@
 .container {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    column-gap: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
+.containerWrapper {
+    margin: 52px 52px 52px;
+    box-shadow: 1px 1px 1px 2px gray;
+    border-radius: 10px;
 }
 
-.left {
+.textWrapper {
     flex: 1;
 }
 
-.leftTitle {
-    font-weight: 800;
+.Title {
+    align-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
     text-decoration: underline;
+    margin-bottom: 70px;
 }
 
-.leftText {
-    width: 310px;
-    text-align: left;
+.Text1 {
+    align-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    width: 742px;
+    margin: auto;
+}
+
+.Text2 {
+    align-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    width: 742px;
+    margin: auto;
+}
+
+.Img {
+    display: block;
+    border: 1px solid #ddd;
+    width: 50%;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
