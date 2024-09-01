@@ -1,6 +1,7 @@
 import Head from "next/head";
 import TopBar from "../topbar/topbar";
 import Footer from "../footer/footer";
+import 'leaflet/dist/leaflet.css'
 
 export default function Layout({children, home}: {children:any, home: boolean}) {
     return(

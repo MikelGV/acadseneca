@@ -1,10 +1,9 @@
-import styles from '../styles/Home.module.css'
+'use client'
+import styles from '../styles/Home.module.scss'
 import Layout from '../components/layout/layout'
 import Experience from '../components/experiene/experience'
-import About from '../components/about/about'
 import Courses from '../components/courses/courses'
-import Slider from '../components/Slider/slider'
-
+import Contact from '../components/contact/contact'
 
 export default function Home() {
   return (
@@ -22,9 +21,8 @@ export default function Home() {
           </div>
         </div>
         <Experience/>
-        <About />
         <Courses/>
-        <Slider/>
+        <Contact/>
       </div>
     </Layout>
   )

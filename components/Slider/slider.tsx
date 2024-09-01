@@ -30,16 +30,16 @@ export default function Slider() {
             <div className={styles.navigation_wrapper}>
                 <div ref={sliderRef} className="keen-slider">
                     <div className="keen-slider__slide">
-                        <img className={styles.img1} src="/Img/teacherExample.jpg" alt="" />
+                        <img className={styles.img1} src="/Img/begoFace.png" alt="" />
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore quae nulla, accusamus at eaque recusandae sapiente labore dolorum facilis assumenda eum! Adipisci quibusdam minus exercitationem tempore ex unde libero?</p>
                     </div>
                     <div className="keen-slider__slide">
-                        <img className={styles.img1} src="/Img/teacherExample.jpg" alt="" />
+                        <img className={styles.img1} src="/Img/RaquelFace.png" alt="" />
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore quae nulla, accusamus at eaque recusandae sapiente labore dolorum facilis assumenda eum! Adipisci quibusdam minus exercitationem tempore ex unde libero?</p>
 
                     </div>
                     <div className="keen-slider__slide">
-                        <img className={styles.img1} src="/Img/teacherExample.jpg" alt="" />
+                        <img className={styles.img1} src="/Img/MariaFace.png" alt="" />
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolore quae nulla, accusamus at eaque recusandae sapiente labore dolorum facilis assumenda eum! Adipisci quibusdam minus exercitationem tempore ex unde libero?</p>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import Layout from "../components/layout/layout";
-import styles from "../styles/qSomos.module.css"
+import styles from "../styles/qSomos.module.scss"
 
 
 export default function qSomos() {

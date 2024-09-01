@@ -1,12 +1,18 @@
-import Layout from "../components/layout/layout";
-import styles from "../styles/dEstamos.module.css";
+'use client'
 
-import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
+import dynamic from "next/dynamic";
+import Layout from "../components/layout/layout";
+import styles from "../styles/dEstamos.module.scss";
 
 export default function dEstamos() {
+    const NotSSRMaps = dynamic(() => import("../components/map/mapComponent"), {
+        ssr: false,
+    })
     return(
         <Layout home>
-            <div className={styles.container}>this is donde estamos</div>
+            <div className={styles.Container}>
+                <NotSSRMaps/>
+            </div>
         </Layout>
     )
 }
