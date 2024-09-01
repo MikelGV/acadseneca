@@ -1,8 +1,44 @@
 'use client'
 
+import { display } from '@mui/system';
+import { useState } from 'react';
 import styles from '../courses/courses.module.scss'
 
 export default function Courses() {
+    const [isActive, setIsActive] = useState(true);
+    const [isActive2, setIsActive2] = useState(false);
+    const [isActive3, setIsActive3] = useState(false);
+    const [isActive4, setIsActive4] = useState(false);
+
+
+  const toggleHide = () => {
+    setIsActive(true);
+    setIsActive2(false);
+    setIsActive3(false);
+    setIsActive4(false);
+  }
+
+  const toggleHide2 = () => {
+    setIsActive(false);
+    setIsActive2(true);
+    setIsActive3(false);
+    setIsActive4(false);
+  }
+
+  const toggleHide3 = () => {
+     setIsActive(false);
+     setIsActive2(false);
+     setIsActive3(true);
+    setIsActive4(false);
+   }
+
+  const toggleHide4 = () => {
+     setIsActive(false);
+     setIsActive2(false);
+     setIsActive3(false);
+    setIsActive4(true);
+   }
+
     return (
         <>
             <div className={styles.coursesWrapper}>
@@ -96,42 +132,45 @@ export default function Courses() {
                         <img className={styles.Img} src="/Img/language.jpg" alt="" />
                         <p className={styles.Title}>IDIOMAS</p>
                     </div>
-                    <div className={styles.bTextWrapper}> 
+                    <div className={styles.ButtonWrapper}> 
                         <div className={styles.ingles}>
-                            <p className={styles.b1TextTitle}>
+                            <button className={styles.b1TextTitle} onClick={toggleHide}>
                                 Inglés:
-                            </p>
-                            <p className={styles.inglesB1Text}>
-                                    Centro oficial preparador de examenes de la Universidad de Cambridge(Porcentaje de aprobados de un 95%).
-                            </p>
-                            </div>
+                            </button>
                         </div>
-                    
-
                         <div className={styles.frances}>
-                            <p className={styles.botTextTitle}>
+                            <button className={styles.botTextTitle} onClick={toggleHide2} >
                                 Francés:
-                            </p>
-                            <p className={styles.b1Text}>
-                                Preparación para la Escuela Oficial de Idiomas - Todo los niveles
-                            </p>
+                            </button>
                         </div>
                         <div className={styles.aleman}>
-                            <p className={styles.botTextTitle}>
+                            <button className={styles.botTextTitle} onClick={toggleHide3}>
                                 Alemán:
-                            </p>
-                            <p className={styles.b1Text}>
-                                Preparación para la Escuela Oficial de Idiomas - Todo los niveles
-                            </p>
+                            </button>
                         </div>
                         <div className={styles.euskera}>
-                            <p className={styles.botTextTitle}>
+                            <button className={styles.botTextTitle} onClick={toggleHide4}>
                                 Euskera:
-                            </p>
-                            <p className={styles.b1Text}>
-                                Preparación para la Escuela Oficial de Idiomas - Todo los niveles: E.G.A / PL / APOYO
-                            </p>
+                            </button>
                         </div>
+                    </div>
+
+                    <div className={styles.bTextWrapper}>
+                        <p className={styles.inglesB1Text} style={{ display: isActive ? "block" : "none" }}>
+                            Centro oficial preparador de examenes de la Universidad de Cambridge(Porcentaje de aprobados de un 95%).
+                        </p>
+                        <p className={styles.b1Text} style={{ display: isActive2 ? "block" : "none" }}>
+                            Preparación para la Escuela Oficial de Idiomas - Todo los niveles de Francés.
+                        </p>
+                        <p className={styles.b1Text} style={{ display: isActive3 ? "block" : "none" }}>
+                            Preparación para la Escuela Oficial de Idiomas - Todo los niveles de Alemán.
+                        </p>
+                        <p className={styles.b1Text} style={{ display: isActive4 ? "block" : "none" }}>
+                            Preparación para la Escuela Oficial de Idiomas - Todo los niveles: E.G.A / PL / APOYO
+                        </p>
+                    </div>
+                    
+
                 </div>
 
             </div>

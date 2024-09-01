@@ -104,7 +104,7 @@
     box-shadow: 1px 1px 1px 2px gray;
     border-radius: 10px;
     height: 100%;
-    max-height: 71%;
+    max-height: 38%;
 }
 
 .rightEducation { 
@@ -125,14 +125,20 @@
 }
 
 .botTextTitle {
+    font-weight:bolder;
+    font-size: 19px;
     text-decoration: underline;
-    font-weight: bolder;
-    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .b1TextTitle {
-    font-weight: bolder;
-    font-size: 25px;
+    font-weight:bolder;
+    font-size: 19px;
     text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .bText{
@@ -140,7 +146,7 @@
     padding-left: 50px;
 }
 .b1Text{
-    width: 300px;
+    width: 400px;
 }
 .rightText{
     width: 300px;
@@ -149,26 +155,30 @@
 
 .bTextWrapper {
     position: relative;
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-}
-.frances {
-    padding-left: 50px;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 93%;
 }
 
-.aleman {
-    padding-left: 50px;
-}
-
-.euskera {
-    padding-left: 50px;
-}
-
-.ingles {
-    padding-left: 50px;
+.ButtonWrapper {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .inglesB1Text {
-    width: 300px;
+    width: 343px;
+}
+
+.ingles {
+    margin-right: 10px;
+}
+
+.frances {
+    margin-right: 10px;
+}
+
+.aleman {
+    margin-right: 10px;
 }
