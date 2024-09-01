@@ -1,15 +1,17 @@
 .main {
+    overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .imgWrapper {
   position: relative;
   text-align: center;
   max-height: 80vh;
-  min-width: 100%;
 }
 
 
