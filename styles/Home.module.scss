@@ -1,3 +1,7 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$phone: "(min-width: 320px) and (max-width: 641px)";
+$desktop: "(min-width: 1024px)";
+
 .main {
     overflow: auto;
   display: flex;
@@ -6,6 +10,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+
 }
 
 .imgWrapper {
@@ -21,6 +26,14 @@
   object-fit: cover;
   object-position: 20%;
   overflow: hidden;
+  @media #{$tablet} {
+      width: 100%;
+  }
+
+  @media #{$phone} {
+    display: none;
+  }
+
 }
 
 .centered {
@@ -31,6 +44,16 @@
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 10px;
+
+  @media #{$tablet} {
+      left: 49%;
+  }
+
+  @media #{$phone} {
+      margin-top: 30vh;
+      left: 49%
+  }
+
 }
 
 
@@ -51,4 +74,8 @@
   font-size: 20px;
   font-weight: 200;
   text-align: left;
+
+  @media #{$phone} {
+    width: 280px;
+  }
 }

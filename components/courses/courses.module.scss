@@ -1,3 +1,7 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$phone: "(min-width: 320px) and (max-width: 641px)";
+$desktop: "(min-width: 1024px)";
+
 .coursesWrapper {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -5,6 +9,14 @@
   height: 100%;
   width: 100%;
   overflow: auto;
+
+  @media #{$tablet} {
+    display: block;
+  }
+
+  @media #{$phone} {
+      display: block;
+  }
 }
 
 .primaria{
@@ -15,6 +27,11 @@
     box-shadow: 1px 1px 1px 2px gray;
     border-radius: 10px;
     width: 88%;
+
+    @media #{$phone} {
+        width: 96%;
+        margin-left: 1vh;
+    }
 }
 
 .liText {
@@ -29,6 +46,15 @@
     border-radius: 10px;
     width: 95%;
     margin-bottom: 15vh;
+
+    @media #{$tablet} {
+        width: 88%;
+        margin-left: 5vh;
+    }
+
+    @media #{$phone} {
+        margin-left:10px;
+    }
 }
 
 .ImgWrapper {
@@ -89,6 +115,10 @@
 .Text{
   padding-left: 70px;
   columns: 2;
+
+  @media #{$phone} {
+    padding-left: 15px;
+  }
 }
 
 .bottomGrid{
@@ -96,6 +126,16 @@
   grid-template-columns: auto auto;
   column-gap: 20px;
   height: 82vh;
+
+  @media #{$tablet} {
+    display: block;
+    width: 83%;
+  }
+
+  @media #{$phone} {
+    display: block;
+    width: 96%;
+  }
 }
 
 .leftEducation { 
@@ -104,8 +144,16 @@
     flex-direction: column;
     box-shadow: 1px 1px 1px 2px gray;
     border-radius: 10px;
-    height: 100%;
-    max-height: 38%;
+    height: 38%;
+
+    @media #{$tablet} {
+       height: 63%;
+    }
+
+    @media #{$phone} {
+        height: 72%;
+        margin-bottom: 10vh;
+    }
 }
 
 .rightEducation { 
@@ -115,6 +163,17 @@
     border-radius: 10px;
     width: 100%;
     height: 38%;
+
+    @media #{$tablet} {
+        height: 61%;
+        margin-bottom: 10vh;
+    }
+
+
+    @media #{$phone} {
+        height: 72%;
+        margin-bottom: 10vh;
+    }
 }
 
 .rightTextTitle {
@@ -123,6 +182,10 @@
     font-size: 25px;
     text-decoration: underline;
     margin-left: 69px;
+
+    @media #{$phone} {
+        margin-left: 13px;
+    }
 }
 
 .botTextTitle {
@@ -132,6 +195,11 @@
     background: none;
     border: none;
     cursor: pointer;
+    @media #{$phone} {
+        width: 53px;
+        height: 25px;
+        font-size: 14px;
+    }
 }
 .b1TextTitle {
     font-weight:bolder;
@@ -140,6 +208,11 @@
     background: none;
     border: none;
     cursor: pointer;
+    @media #{$phone} {
+        width: 48px;
+        height: 25px;
+        font-size: 14px;
+    }
 }
 
 .bText{
@@ -148,6 +221,10 @@
 }
 .b1Text{
     width: 400px;
+
+    @media #{$phone} {
+        width: 342px;
+    }
 }
 .rightText{
     width: 300px;
@@ -160,6 +237,10 @@
     margin-top: 25px;
     margin-left: 25px;
     width: 93%;
+
+    @media #{$phone} {
+        width: 80%;
+    }
 }
 
 .ButtonWrapper {
@@ -170,6 +251,7 @@
 
 .inglesB1Text {
     width: 343px;
+
 }
 
 .ingles {

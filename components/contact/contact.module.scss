@@ -1,9 +1,24 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$phones: "(min-width: 320px) and (max-width: 641px)";
+$desktop: "(min-width: 1024px)";
+
 .FormWrapper {
     height: 75%;
     width: 40%;
     background-color: #e5e5e5;
     margin-bottom: 20vh;
     border-radius: 10px;
+
+
+    @media #{$tablet} {
+        margin-top: 50vh;
+        width: 70%;
+    }
+
+    @media #{$phones} {
+        margin-top: 65vh;
+        width: 70%;
+    }
 }
 
 .ContactUs {

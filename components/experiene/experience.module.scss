@@ -1,0 +1,27 @@
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$phone: "(min-width: 320px) and (max-width: 641px)";
+$desktop: "(min-width: 1024px)";
+
+.experience {
+  text-align: center;
+  margin-bottom: 10vh; 
+
+  @media #{$phone} {
+      margin-top: 70vh;
+  }
+}
+
+.expTitle {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.expText {
+  font-size: 20px;
+  width: 686px;
+  margin-left: 30px;
+
+  @media #{$phone} {
+    width: 300px;
+  }
+}
