@@ -1,5 +1,10 @@
 .topbar {
     height: 70px;
+    margin-bottom: 8px;
+    
+    @media screen and (min-height: 100px) {
+        height: 100%;
+    }
 }
 .topbarWrapper {
     padding: 20px 30px;

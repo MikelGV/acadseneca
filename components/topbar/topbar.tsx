@@ -11,7 +11,6 @@ export default function TopBar() {
                 <div className={styles.right}>
                     <Link href="/dEstamos" className={styles.MenuItem}>Donde Estamos</Link>
                     <Link href="/qSomos" className={styles.MenuItem}>Quienes Somos</Link>
-                    <Link href="/contact" className={styles.MenuItem}>Contacto</Link>
                 </div>
             </div>
         </div>
