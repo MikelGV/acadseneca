@@ -20,11 +20,11 @@ export default function Contact() {
 
     return (
         <div className={styles.FormWrapper}>
-            <h2 className={styles.ContactUs}>Contact Us</h2>
+            <h2 className={styles.ContactUs}>Contáctanos</h2>
             <form className={styles.Form} onSubmit={handleSubmit(onSubmit)}>
-                <input className={styles.Name} type="text" placeholder="Full Name" {...register("name", {required: true})} />
-                <input className={styles.Email} type="email" placeholder="example@example.com" {...register("email", {required: true})} />
-                <textarea className={styles.Message} rows={4} placeholder="Type your message" {...register("message", {required:true})}></textarea>
+                <input className={styles.Name} type="text" placeholder="Nombre" {...register("name", {required: true})} />
+                <input className={styles.Email} type="email" placeholder="ejemplo@gmail.com" {...register("email", {required: true})} />
+                <textarea className={styles.Message} rows={4} placeholder="Escribe tu mensaje" {...register("message", {required:true})}></textarea>
 
                 <div>
                     <button className={styles.Button}>Submit</button>
