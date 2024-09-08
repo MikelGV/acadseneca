@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  acadSeneca:
+    container_name: nextAcad-app
+    image: acadseneca:1.0.0
+    build:
+      context: ./acadSeneca
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+
+  # Add more containers below (nginx, postgres, etc.)
+
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
