@@ -1,41 +1,40 @@
-import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-import Mail from "nodemailer/lib/mailer";
+import { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer';
 
-export async function POST(request: NextRequest) {
-    const { email, name, message } = await request.json()
+export default async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ message: 'Only POST requests allowed' });
+  }
 
-    const transport = nodemailer.createTransport({
-        auth: {
-            user: process.env.MY_EMAIL,
-            pass: process.env.MY_PASSWORD,
-        },
-    });
+  const { email, name, message, html } = req.body;
 
-    const mailOptions: Mail.Options = {
+  if (!email || !name || (!message && !html)) {
+    return res.status(400).json({ message: 'Missing required fields' });
+  }
+
+  // Configure the SMTP transport using Gmail
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.MY_EMAIL, // Your Gmail account email address
+      pass: process.env.MY_PASSWORD, // Your Gmail App Password or Gmail password (if less secure apps enabled)
+    },
+  });
+
+  try {
+    // Send the email
+    await transporter.sendMail({
         from: process.env.MY_EMAIL,
         to: process.env.MY_EMAIL,
         cc: email,
-        subject: `message from &{name} (&{email})`,
+        subject: `message from ${name} (${email})`,
         text: message,
-    };
+        html,
+    });
 
-    const sendMailPromise = () => {
-        new Promise<string>((resolve, reject) => {
-            transport.sendMail(mailOptions, function (err) {
-                if (!err) {
-                    resolve("Email sent");
-                } else {
-                    reject(err.message);
-                }
-            });
-        });
-
-        try {
-            sendMailPromise();
-            return NextResponse.json({message: "Email sent"})
-        } catch (err) {
-            return NextResponse.json({error: err}, {status: 500});
-        }
-    }
+    res.status(200).json({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ message: 'Failed to send email' });
+  }
 }
