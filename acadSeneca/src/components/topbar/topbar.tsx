@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { dancingScript } from "../../utils/fonts";
 import styles from "../topbar/topbar.module.css";
 
 export default function TopBar() {
@@ -6,7 +7,7 @@ export default function TopBar() {
         <div className={styles.topbar}>
             <div className={styles.topbarWrapper}>
                 <div className={styles.left}>
-                    <Link className={styles.logo} href="/">Academia Seneca</Link>
+                    <Link className={`${styles.logo} ${dancingScript}`} href="/">Academia Seneca</Link>
                 </div>
                 <div className={styles.right}>
                     <Link href="/dEstamos" className={styles.MenuItem}>Donde Estamos</Link>

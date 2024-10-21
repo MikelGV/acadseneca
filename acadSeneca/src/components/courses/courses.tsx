@@ -1,4 +1,3 @@
-'use client'
 
 import { display } from '@mui/system';
 import { useState } from 'react';

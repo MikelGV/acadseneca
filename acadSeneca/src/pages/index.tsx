@@ -1,14 +1,12 @@
-'use client'
 import Contact from '../components/contact/contact'
 import Courses from '../components/courses/courses'
 import Experience from '../components/experiene/experience'
-import Layout from '../components/layout/layout'
+import Layout from './layout'
 import styles from '../styles/Home.module.scss'
-
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <div className={styles.main}>
         <div className={styles.imgWrapper}>
           <img className={styles.mainImg} src="/Img/optiona.jpg" alt="" />
